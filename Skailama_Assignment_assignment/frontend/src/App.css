@@ -1,0 +1,33 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #7E22CE;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+  #toggle:checked + label span {
+    transform: translateX(100%);
+  }
